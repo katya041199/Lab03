@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Задание 3</title>
+    
+    <script>
+//НА ПЯТЕРКУ
+function zad3() {
+        var a = parseInt(document.getElementById('a1').value);
+        var b = parseInt(document.getElementById('b').value);
+        var h = parseInt(document.getElementById('h').value);
+        var s2 = 0.5*(a+b)*h;
+        document.getElementById('result3').innerHTML = "S=" + s2;
+      }
+    </script>
+  </head>
+  
+  <body>
+    <h1>НА ПЯТЕРКУ</h1>
+    <p>Введите длины оснований</p>
+        <input type="text" id="a1"><br>
+        <input type="text" id="b"><br>
+    <p>Введите высоту</p>
+        <input type="text" id="h"><br>
+        <input type="button" value="Площадь трапеции" onclick="zad3()"><br>
+    <div id="result3"></div><br>
+  </body>
+</html>

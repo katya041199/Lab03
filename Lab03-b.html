@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Задание 3</title>
+    
+    <script>
+//НА ЧЕТВЕРКУ
+function zad2() {
+        var R = parseInt(document.getElementById('R').value);
+        var r = parseInt(document.getElementById('r').value);
+        var s1 = Math.PI * (R*R - r*r);
+        document.getElementById('result2').innerHTML = "S=" + s1;
+      }
+    </script>
+  </head>
+  
+  <body>
+        <h1>НА ЧЕТВЕРКУ</h1>
+        <p>Радиус внешней окружности</p>
+        <input type="text" id="R"><br>
+        <p>Радиус внутренней окружности</p>
+        <input type="text" id="r"><br>
+          <input type="button" value="Площадь кольца по вводимым радиусам" onclick="zad2()"><br>
+          <div id="result2"></div><br>
+  </body>
+</html>
